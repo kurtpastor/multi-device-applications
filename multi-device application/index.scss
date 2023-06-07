@@ -1,0 +1,104 @@
+// media from 0-480 px
+@media (min-width: 0px) and (max-width: 480px){
+    // adding background image and making it cover the entire screen
+    body{
+        background-image: url(bgimg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        max-height: 100vh;
+        margin: -5px;
+    }
+
+    // dropdown menubar
+    .Menubar {
+        position: relative;
+        display: inline-block;
+        padding: 20px;
+      }
+    // menubar not showing unless button is clicked
+      .menubar-content {
+        display: none;
+        position: absolute;
+        background-color: slategray;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 12px 16px;
+        z-index: 1;
+      }
+    //  menubar shows
+      .Menubar:hover .menubar-content {
+        display: block;
+      }
+
+}
+
+// media from 491-1024 px
+@media (min-width: 481px) and (max-width: 1024px){
+    // adding background image and making it cover the entire screen
+    body{
+        background-image: url(bgimg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        max-height: 100vh;
+        margin: -5px;
+    }
+
+    // dropdown menubar
+    .Menubar {
+        position: relative;
+        display: inline-block;
+        padding: 20px;
+      }
+      // menubar not showing unless button is clicked
+      .menubar-content {
+        display: none;
+        position: absolute;
+        background-color: slategray;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 12px 16px;
+        z-index: 1;
+      }
+      //  menubar shows
+      .Menubar:hover .menubar-content {
+        display: block;
+      }
+
+}
+
+// media from 1024 and above px
+@media (min-width: 1025px){
+    // setting up background image
+    body{
+        background-image: url(bgimg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        max-height: 100vh;
+        margin: -5px;
+    }
+    
+    // menubar is shown from the getgo
+    .Menubar{
+        display: flex;
+        flex-direction: row;
+        padding: 5px;
+        justify-content: center;
+    }
+    
+    // padding of menubar elements
+    a{
+      padding: 5px;
+    }
+
+    // having a menu element have an outline to show u are on this screen
+    .active img{
+        border:1px solid white;
+    }
+
+    // button from other media sizes doesnt show
+    button{
+        display: none;
+    }
+}
+
+

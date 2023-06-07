@@ -1,0 +1,60 @@
+// media at 0-480 px
+@media (min-width: 0px) and (max-width: 480px){
+    // centering info
+    .title{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .info{
+        display: flex;
+        justify-content: center;
+    }
+
+    // changing size to be responsive
+    .infographics img{
+        max-width: 30%;
+        height: auto;
+    }
+}
+
+// media from 491-1024 px
+@media (min-width: 481px) and (max-width: 1024px){
+    // centering info
+    .title{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .info{
+        display: flex;
+        justify-content: center;
+    }
+
+    // changing size to be responsive
+    .infographics img{
+        max-width: 30%;
+        height: auto;
+    }
+}
+
+// media from 1025 to above
+@media (min-width: 1025px){
+    // centering info
+    .title{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .info{
+        display: flex;
+        justify-content: center;
+    }
+
+    // changing size to be responsive
+    .infographics img{
+        max-width: 30%;
+        height: auto;
+    }
+
+}
